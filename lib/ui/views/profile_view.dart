@@ -5,7 +5,7 @@ import 'login_view.dart';
 class ProfileView extends StatelessWidget {
   final Map userData; // Mengambil data user dari login (Source 586)
 
-  ProfileView({required this.userData});
+  const ProfileView({super.key, required this.userData});
 
   @override
   Widget build(BuildContext context) {

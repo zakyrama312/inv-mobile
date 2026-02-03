@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 
 class FormPermintaanView extends StatefulWidget {
+  const FormPermintaanView({super.key});
+
   @override
   _FormPermintaanViewState createState() => _FormPermintaanViewState();
 }
@@ -32,8 +34,7 @@ class _FormPermintaanViewState extends State<FormPermintaanView> {
                 items: ["Tinta Printer", "Kertas HVS", "Kabel LAN"]
                     .map((e) => DropdownMenuItem(value: e, child: Text(e)))
                     .toList(),
-                onChanged: (val) =>
-                    setState(() => _selectedBHP = val as String?),
+                onChanged: (val) => setState(() => _selectedBHP = val),
               ),
               SizedBox(height: 15),
 
@@ -75,11 +76,11 @@ class _FormPermintaanViewState extends State<FormPermintaanView> {
                 onPressed: () {
                   // Mengirim data ke API api_permintaan.php case 'insert'
                 },
-                child: Text("Kirim Permintaan"),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.orange[700],
                   minimumSize: Size(double.infinity, 50),
                 ),
+                child: Text("Kirim Permintaan"),
               ),
             ],
           ),
