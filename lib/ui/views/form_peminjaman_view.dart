@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FormPeminjamanView extends StatefulWidget {
+  const FormPeminjamanView({super.key});
+
   @override
   _FormPeminjamanViewState createState() => _FormPeminjamanViewState();
 }
@@ -28,8 +30,7 @@ class _FormPeminjamanViewState extends State<FormPeminjamanView> {
                 items: ["Arduino", "Solder", "Laptop"]
                     .map((e) => DropdownMenuItem(value: e, child: Text(e)))
                     .toList(),
-                onChanged: (val) =>
-                    setState(() => _selectedBarang = val as String?),
+                onChanged: (val) => setState(() => _selectedBarang = val),
               ),
               SizedBox(height: 15),
 
@@ -63,10 +64,10 @@ class _FormPeminjamanViewState extends State<FormPeminjamanView> {
                 onPressed: () {
                   // Kirim data ke API tambah_peminjaman.php
                 },
-                child: Text("Ajukan Peminjaman"),
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(double.infinity, 50),
                 ),
+                child: Text("Ajukan Peminjaman"),
               ),
             ],
           ),
