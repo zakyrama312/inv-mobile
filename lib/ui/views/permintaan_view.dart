@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'form_permintaan_view.dart';
 
 class PermintaanView extends StatelessWidget {
+  const PermintaanView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

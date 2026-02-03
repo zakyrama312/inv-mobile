@@ -7,7 +7,7 @@ import 'profile_view.dart';
 
 class MainNavigation extends StatefulWidget {
   final Map userData;
-  MainNavigation({required this.userData});
+  const MainNavigation({super.key, required this.userData});
 
   @override
   _MainNavigationState createState() => _MainNavigationState();

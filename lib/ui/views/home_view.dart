@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HomeView extends StatelessWidget {
   final Map userData; // Data dari login (nama, role, prodi)
 
-  HomeView({required this.userData});
+  const HomeView({super.key, required this.userData});
 
   @override
   Widget build(BuildContext context) {

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'form_peminjaman_view.dart';
 
 class PeminjamanView extends StatelessWidget {
+  const PeminjamanView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
